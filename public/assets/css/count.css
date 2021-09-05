@@ -8,6 +8,8 @@ body{
     margin: auto;
     /* 全体の余白 */
     padding: 10px;
+    
+    background: #00b5de;
 }
 
 /* 数字 */
@@ -55,14 +57,14 @@ input{
 input[value="+"]{
     
     /* 文字の色 */
-    color: #f9f9f9;
+    color: #d8d8d8;
     
     /* 背景 */
-    background: #448AFF;
+    background: #e94c4d;
 }
 
 /* マイナスボタン */
 input[value="-"]{
-    color: #f9f9f9;
-    background: #F44336;
+    color: #d8d8d8;
+    background: #c2ca2e;
 }
