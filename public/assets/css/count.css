@@ -68,3 +68,9 @@ input[value="-"]{
     color: #d8d8d8;
     background: #c2ca2e;
 }
+
+/* クリアボタン */
+input[value="CLEAR"]{
+    color: #d8d8d8;
+    background: #f8b516;
+}
