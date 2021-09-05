@@ -14,7 +14,17 @@
     
     <% @counters.each do |counter|%>
       <div class="counter">
-        <h1 id="<%= counter.id %>"><%= counter.number %></h1>
+        <h1 style="
+          <% if counter.number % 3 == 0 || counter.number.to_s.include?("3")%>
+            border: 1px solid #f8b516;
+          <% elsif counter.number == 0 %>
+            border: 1px solid #d8d8d8;
+          <% else %>
+            border: 1px solid #d8d8d8;
+          <% end %>
+        ">
+          <%= counter.number %>
+        </h1>
         <form action="/plus/<%= counter.id %>" method="post">
           <input type="submit" value="+">
         </form>

@@ -29,9 +29,6 @@ h1{
     height: 100px;
     line-height: 100px;
     
-    /* 枠の太さ 線の種類 色 */
-    border: 1px solid #009688;
-    
     /* 枠を丸くする */
     border-radius: 50%;
 }
