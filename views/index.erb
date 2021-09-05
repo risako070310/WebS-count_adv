@@ -15,12 +15,24 @@
     <% @counters.each do |counter|%>
       <div class="counter">
         <h1 style="
-          <% if counter.number % 3 == 0 || counter.number.to_s.include?("3")%>
-            border: 1px solid #f8b516;
-          <% elsif counter.number == 0 %>
+          <% if counter.number == 0 %>
             border: 1px solid #d8d8d8;
+          <% elsif counter.number % 3 == 0 || counter.number.to_s.include?("3") %>
+            border: 1px solid #f8b516;
           <% else %>
             border: 1px solid #d8d8d8;
+          <% end %>
+          
+          <% if counter.number == 0 %>
+            color: #edda15;
+          <% elsif counter.number % 15 == 0 %>
+            color: #2a6d39;
+          <% elsif counter.number % 5 == 0 %>
+            color: #ec6c1f;
+          <% elsif counter.number % 3 == 0 %>
+            color: #d01026;
+          <% else %>
+            color: #edda15;
           <% end %>
         ">
           <%= counter.number %>
