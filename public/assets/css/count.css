@@ -73,4 +73,13 @@ input[value="-"]{
 input[value="CLEAR"]{
     color: #d8d8d8;
     background: #f8b516;
+    margin-bottom: 30px;
+}
+
+
+/* 新規作成ボタン */
+input[value="NEW"]{
+    color: #d8d8d8;
+    background: #d01026;
+    margin-bottom: 100px;
 }
